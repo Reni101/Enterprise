@@ -9,7 +9,7 @@ export const App = () => {
             client:{process.env.REACT_APP_CLIENT_ID}
             <Link to='/'> main</Link>
             <Link to='/about'> about </Link>
-                <button onClick={toggleTheme}>test</button>
+                <button onClick={toggleTheme}>test2</button>
             <Suspense fallback={<div>loading</div>}>
                 <Outlet/>
             </Suspense>
