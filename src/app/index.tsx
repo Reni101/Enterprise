@@ -7,8 +7,8 @@ import '@fontsource/roboto/700.css'
 
 import '../shared/styles/index.scss'
 import {ThemeProvider} from "@/app/providers/theme-provider";
-import {Main} from "@/pages/main";
-import {About} from "@/pages/about";
+import {MainPage} from "@/pages/main";
+import {AboutPage} from "@/pages/about";
 
 
 const router = createBrowserRouter([
@@ -18,10 +18,10 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Main/>
+                element: <MainPage/>
             }, {
                 path: "/about",
-                element: <About/>
+                element: <AboutPage/>
             },
         ],
     },

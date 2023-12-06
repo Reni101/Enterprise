@@ -1,4 +1,4 @@
-const About = () => {
+const AboutPage = () => {
     return (
         <div>
             <a href={'/about'} onClick={(e) => {
@@ -16,4 +16,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default AboutPage;
