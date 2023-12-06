@@ -1,6 +1,6 @@
-import {Count} from "@/components/count/count";
-import Arrow from "@/common/assets/icons/arrow";
-import background from '@/common/assets/images/Background.png'
+
+import background from '../../shared/assets/images/Background.png'
+import Arrow from "@/shared/assets/icons/arrow";
 
 
 const Main = () => {
@@ -12,7 +12,6 @@ const Main = () => {
             <h1>PLATFORM={__PLATFORM__}</h1>
             <img src={background} alt="asd"/>
 
-            <Count/>
         </div>
     );
 };
