@@ -6,9 +6,8 @@ export const App = () => {
     const { toggleTheme} = useTheme();
     return (
         <div >
-            client:{process.env.REACT_APP_CLIENT_ID}
-            <Link to='/'> main</Link>
-            <Link to='/about'> about </Link>
+            <Link to='/profile'> profile</Link>
+            <Link to='/'> sign in </Link>
                 <button onClick={toggleTheme}>test2</button>
             <Suspense fallback={<div>loading</div>}>
                 <Outlet/>
