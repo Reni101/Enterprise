@@ -1,10 +1,11 @@
 import { RouteObject } from 'react-router-dom';
 import {routes} from "@/shared/const";
+import {SignIn} from "@/pages/signIn";
 
 export const publicRoutes: RouteObject[] = [
     {
         path: routes.AUTH.SIGN_IN,
-        element: <div> sign in</div>,
+        element: <SignIn/>,
     },
     {
         path: routes.AUTH.SIGN_UP,
