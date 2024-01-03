@@ -28,6 +28,9 @@ export const buildPlugins = ({path:paths, isDev, platform}: BuildOptions): webpa
             __PLATFORM__: JSON.stringify(platform),
         }),
         new ForkTsCheckerWebpackPlugin(),
-        new ReactRefreshWebpackPlugin()
+        new ReactRefreshWebpackPlugin(),
+        new webpack.DefinePlugin({
+            __IS_DEV__:JSON.stringify(isDev)
+        })
     ].filter(Boolean)
 }
