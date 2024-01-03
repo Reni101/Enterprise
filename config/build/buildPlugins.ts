@@ -32,6 +32,5 @@ export const buildPlugins = ({path:paths, isDev, platform}: BuildOptions): webpa
         new webpack.DefinePlugin({
             __IS_DEV__:JSON.stringify(isDev)
         }),
-        new webpack.HotModuleReplacementPlugin()
     ].filter(Boolean)
 }
