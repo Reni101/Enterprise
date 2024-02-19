@@ -8,7 +8,7 @@ import { Router } from '@/app/providers/router'
 import '../shared/config/i18n/i18n'
 
 createRoot(document.getElementById('root')).render(
-  <ThemeProvider>
-    <Router />
-  </ThemeProvider>
+    <ThemeProvider>
+        <Router />
+    </ThemeProvider>
 )

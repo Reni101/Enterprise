@@ -6,21 +6,21 @@ import { PublicLayout } from '@/app/providers/router/public-routers/public-layuo
 import { publicRoutes } from '@/app/providers/router/public-routers/public-routers'
 
 const router = createBrowserRouter([
-  {
-    element: <App />,
-    children: [
-      {
-        element: <PrivateLayout />,
-        children: privateRoutes,
-      },
-      {
-        element: <PublicLayout />,
-        children: publicRoutes,
-      },
-    ],
-  },
+    {
+        element: <App />,
+        children: [
+            {
+                element: <PrivateLayout />,
+                children: privateRoutes,
+            },
+            {
+                element: <PublicLayout />,
+                children: publicRoutes,
+            },
+        ],
+    },
 ])
 
 export const Router = () => {
-  return <RouterProvider router={router} />
+    return <RouterProvider router={router} />
 }
